@@ -13,10 +13,12 @@ struct WorldLeaders : View{
     var body: some View{
         NavigationView{
             VStack{
+                
                 List(){
                     Section{
                         ForEach(leadersModal.MkaWords){mka in
-                            Text(mka.AtaturkWords)
+                            
+                                
                         }
                     }header: {
                         Text("Mustafa Kemal Ataturk")
