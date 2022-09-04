@@ -15,10 +15,8 @@
 		35449D2A28BFD378005160B7 /* dailyWordRememberUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35449D2928BFD378005160B7 /* dailyWordRememberUITests.swift */; };
 		35449D2C28BFD378005160B7 /* dailyWordRememberUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35449D2B28BFD378005160B7 /* dailyWordRememberUITestsLaunchTests.swift */; };
 		35449D3B28BFD448005160B7 /* WorldLeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35449D3A28BFD448005160B7 /* WorldLeaders.swift */; };
-		35449D3D28BFD554005160B7 /* ViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35449D3C28BFD554005160B7 /* ViewModal.swift */; };
-		35449D3F28BFD947005160B7 /* ArbiterModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35449D3E28BFD947005160B7 /* ArbiterModal.swift */; };
-		35EE413728C1020300F9909C /* listRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EE413628C1020300F9909C /* listRow.swift */; };
-		35EE413928C1065B00F9909C /* ItemModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EE413828C1065B00F9909C /* ItemModal.swift */; };
+		35449D3D28BFD554005160B7 /* arbiterModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35449D3C28BFD554005160B7 /* arbiterModal.swift */; };
+		357D0EBD28C43E8500C7C954 /* ViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357D0EBC28C43E8500C7C954 /* ViewModal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,10 +48,8 @@
 		35449D2928BFD378005160B7 /* dailyWordRememberUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dailyWordRememberUITests.swift; sourceTree = "<group>"; };
 		35449D2B28BFD378005160B7 /* dailyWordRememberUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dailyWordRememberUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		35449D3A28BFD448005160B7 /* WorldLeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldLeaders.swift; sourceTree = "<group>"; };
-		35449D3C28BFD554005160B7 /* ViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModal.swift; sourceTree = "<group>"; };
-		35449D3E28BFD947005160B7 /* ArbiterModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArbiterModal.swift; sourceTree = "<group>"; };
-		35EE413628C1020300F9909C /* listRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listRow.swift; sourceTree = "<group>"; };
-		35EE413828C1065B00F9909C /* ItemModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModal.swift; sourceTree = "<group>"; };
+		35449D3C28BFD554005160B7 /* arbiterModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = arbiterModal.swift; sourceTree = "<group>"; };
+		357D0EBC28C43E8500C7C954 /* ViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,10 +146,8 @@
 		35449D3928BFD3A9005160B7 /* Modal */ = {
 			isa = PBXGroup;
 			children = (
-				35449D3C28BFD554005160B7 /* ViewModal.swift */,
-				35449D3E28BFD947005160B7 /* ArbiterModal.swift */,
-				35EE413628C1020300F9909C /* listRow.swift */,
-				35EE413828C1065B00F9909C /* ItemModal.swift */,
+				357D0EBC28C43E8500C7C954 /* ViewModal.swift */,
+				35449D3C28BFD554005160B7 /* arbiterModal.swift */,
 			);
 			path = Modal;
 			sourceTree = "<group>";
@@ -290,11 +284,9 @@
 			files = (
 				35449D3B28BFD448005160B7 /* WorldLeaders.swift in Sources */,
 				35449D1128BFD376005160B7 /* ContentView.swift in Sources */,
-				35449D3D28BFD554005160B7 /* ViewModal.swift in Sources */,
+				35449D3D28BFD554005160B7 /* arbiterModal.swift in Sources */,
+				357D0EBD28C43E8500C7C954 /* ViewModal.swift in Sources */,
 				35449D0F28BFD376005160B7 /* dailyWordRememberApp.swift in Sources */,
-				35EE413728C1020300F9909C /* listRow.swift in Sources */,
-				35EE413928C1065B00F9909C /* ItemModal.swift in Sources */,
-				35449D3F28BFD947005160B7 /* ArbiterModal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,27 +9,9 @@ import Foundation
 import SwiftUI
 
 struct WorldLeaders : View{
-    @StateObject private var leadersModal : arbiterModal = arbiterModal()
+
     var body: some View{
-        NavigationView{
-            VStack{
-                
-                List(){
-                    Section{
-                        ForEach(leadersModal.MkaWords){mka in
-                            
-                                
-                        }
-                    }header: {
-                        Text("Mustafa Kemal Ataturk")
-                            .font(.system(size:35))
-                            .bold()
-                            
-                    }
-                }
-            }.navigationTitle("")
-                .navigationBarHidden(true)
-        }
+        Text("sa")
     }
 }
 
@@ -38,15 +20,4 @@ struct Previews : PreviewProvider{
         WorldLeaders()
     }
 }
-/*
- List{
- ForEach(0..<Texts.count){t in
- NavigationLink {
- Text("\(self.Texts[t])")
- } label: {
- Text("\(self.Texts[t].description)")
- }
- 
- }
- }
- */
+
