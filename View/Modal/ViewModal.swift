@@ -10,8 +10,8 @@ import SwiftUI
 
 class ViewModal : ObservableObject{
     init(){
-        MustafaKemal = AllarbiterFeature.MustafaKemalAtaturk
+        MustafaKemal = arbiterModal.MustafaKemalAtaturk
     }
     
-    @Published var MustafaKemal : [AllarbiterFeature]
+    @Published var MustafaKemal : [arbiterModal]
 }

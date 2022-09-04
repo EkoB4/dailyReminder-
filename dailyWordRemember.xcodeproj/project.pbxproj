@@ -17,6 +17,8 @@
 		35449D3B28BFD448005160B7 /* WorldLeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35449D3A28BFD448005160B7 /* WorldLeaders.swift */; };
 		35449D3D28BFD554005160B7 /* arbiterModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35449D3C28BFD554005160B7 /* arbiterModal.swift */; };
 		357D0EBD28C43E8500C7C954 /* ViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357D0EBC28C43E8500C7C954 /* ViewModal.swift */; };
+		3584993328C4F492009BA732 /* rowList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3584993228C4F492009BA732 /* rowList.swift */; };
+		3584993528C4F969009BA732 /* itemModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3584993428C4F969009BA732 /* itemModal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		35449D3A28BFD448005160B7 /* WorldLeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldLeaders.swift; sourceTree = "<group>"; };
 		35449D3C28BFD554005160B7 /* arbiterModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = arbiterModal.swift; sourceTree = "<group>"; };
 		357D0EBC28C43E8500C7C954 /* ViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModal.swift; sourceTree = "<group>"; };
+		3584993228C4F492009BA732 /* rowList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rowList.swift; sourceTree = "<group>"; };
+		3584993428C4F969009BA732 /* itemModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemModal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +152,8 @@
 			children = (
 				357D0EBC28C43E8500C7C954 /* ViewModal.swift */,
 				35449D3C28BFD554005160B7 /* arbiterModal.swift */,
+				3584993228C4F492009BA732 /* rowList.swift */,
+				3584993428C4F969009BA732 /* itemModal.swift */,
 			);
 			path = Modal;
 			sourceTree = "<group>";
@@ -286,7 +292,9 @@
 				35449D1128BFD376005160B7 /* ContentView.swift in Sources */,
 				35449D3D28BFD554005160B7 /* arbiterModal.swift in Sources */,
 				357D0EBD28C43E8500C7C954 /* ViewModal.swift in Sources */,
+				3584993328C4F492009BA732 /* rowList.swift in Sources */,
 				35449D0F28BFD376005160B7 /* dailyWordRememberApp.swift in Sources */,
+				3584993528C4F969009BA732 /* itemModal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

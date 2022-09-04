@@ -8,12 +8,13 @@
 import Foundation
 
 
-struct AllarbiterFeature : Identifiable{
+struct arbiterModal : Identifiable{
     var id : UUID = UUID()
     var wordVal : String
- 
+    var isFinished : Bool
 }
 
-extension AllarbiterFeature {
-    static var MustafaKemalAtaturk = [AllarbiterFeature(wordVal:"sa")]
+extension arbiterModal {
+    static var MustafaKemalAtaturk = [arbiterModal(wordVal:"sa", isFinished: true)]
 }
+

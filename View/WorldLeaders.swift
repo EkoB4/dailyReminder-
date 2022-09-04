@@ -9,9 +9,15 @@ import Foundation
 import SwiftUI
 
 struct WorldLeaders : View{
-
+    @StateObject var viewModal : ViewModal = ViewModal()
     var body: some View{
-        Text("sa")
+        VStack{
+            List(){
+                ForEach(viewModal.MustafaKemal){mka in
+                    rowList(value: mka)
+                }
+            }
+        }
     }
 }
 
