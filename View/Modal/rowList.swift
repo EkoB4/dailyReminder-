@@ -12,7 +12,7 @@ struct rowList : View{
     let value : arbiterModal
     var body: some View{
         HStack{
-            Image(systemName: value.isFinished ? "bolt.circle" : "bolt.circle")
+            Image(systemName: value.isFinished ? "bolt.circle" : "bolt.circle.fill")
                 .foregroundColor(value.isFinished ? .purple : .red)
             Text(value.wordVal)
             Spacer()
@@ -27,6 +27,7 @@ struct listPreviews : PreviewProvider {
     static var previews: some View{
         Group{
             rowList(value: firstItem)
+            rowList(value: secondItem)
         }.previewLayout(.sizeThatFits)
     }
 }
