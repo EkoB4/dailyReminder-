@@ -14,4 +14,10 @@ class ViewModal : ObservableObject{
     }
     
     @Published var MustafaKemal : [arbiterModal]
+    
+    func updateMka(item:arbiterModal){
+        if let  index = MustafaKemal.firstIndex(where: {$0.id == item.id }){
+            MustafaKemal[index] = item.isItemUpdated()
+        }
+    }
 }
