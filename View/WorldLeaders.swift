@@ -16,9 +16,7 @@ struct WorldLeaders : View{
                 ForEach(viewModal.MustafaKemal){mka in
                     rowList(value: mka)
                         .onTapGesture {
-                            withAnimation(.linear) {
-                                viewModal.updateMka(item: mka)
-                            }
+                            viewModal.updateMka(item: mka)
                         }
                 }
             }
