@@ -14,10 +14,23 @@ struct WorldLeaders : View{
         VStack{
             List(){
                 ForEach(viewModal.MustafaKemal){mka in
-                    rowList(value: mka)
-                        .onTapGesture {
-                            viewModal.updateMka(item: mka)
-                        }
+                    Button {
+                        let ataContent = UNMutableNotificationContent()
+                        ataContent.title = "Ata diyor ki :"
+                        ataContent.subtitle = "\(mka)"
+                        
+                        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3, repeats: false)
+                        let request = UNNotificationRequest(identifier: UUID().uuidString, content: ataContent, trigger: trigger)
+                        UNUserNotificationCenter.current().add(request)
+                    } label: {
+                        rowList(value: mka)
+                            .onTapGesture {
+                                withAnimation {
+                                    viewModal.updateMka(item: mka)
+                                }
+                            }
+                    }
+
                 }
             }
         }

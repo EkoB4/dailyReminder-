@@ -11,6 +11,7 @@ struct NotfyView: View {
     @State private var testViewModal : ViewModal = ViewModal()
     var body: some View {
         VStack{
+            List(){
             ForEach(testViewModal.MustafaKemal){ mka in
                 Button {
                     let content = UNMutableNotificationContent()
@@ -20,8 +21,9 @@ struct NotfyView: View {
                     let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
                     UNUserNotificationCenter.current().add(request)
                 } label: {
-                    Text("hellow")
+                    rowList(value:mka)
                 }
+            }
             }
         }
     }
@@ -47,6 +49,6 @@ struct Permission: View {
 
 struct Notification__Previews: PreviewProvider {
     static var previews: some View {
-        Permission()
+        NotfyView()
     }
 }
