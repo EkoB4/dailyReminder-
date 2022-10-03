@@ -18,19 +18,21 @@ struct WorldLeaders : View{
                         let ataContent = UNMutableNotificationContent()
                         ataContent.title = "Ata diyor ki :"
                         ataContent.subtitle = "\(mka)"
-                        
-                        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3, repeats: false)
+                        var day = DateComponents()
+                        day.day = 1
+                        let trigger = UNCalendarNotificationTrigger(dateMatching: day, repeats: true)
+                        print("the time is set:\(day)")
                         let request = UNNotificationRequest(identifier: UUID().uuidString, content: ataContent, trigger: trigger)
                         UNUserNotificationCenter.current().add(request)
                     } label: {
                         rowList(value: mka)
+                            .foregroundColor(.black)
                             .onTapGesture {
                                 withAnimation {
                                     viewModal.updateMka(item: mka)
                                 }
                             }
                     }
-
                 }
             }
         }

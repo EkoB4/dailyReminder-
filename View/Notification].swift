@@ -9,25 +9,28 @@ import SwiftUI
 
 struct NotfyView: View {
     @State private var testViewModal : ViewModal = ViewModal()
+    @State private var content = UNMutableNotificationContent()
     var body: some View {
-        VStack{
+            VStack{
             List(){
-            ForEach(testViewModal.MustafaKemal){ mka in
-                Button {
-                    let content = UNMutableNotificationContent()
-                    content.title = "sa"
-                    content.subtitle = "'\(mka.wordVal)'"
-                    let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 4, repeats: false)
-                    let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
-                    UNUserNotificationCenter.current().add(request)
-                } label: {
-                    rowList(value:mka)
+                ForEach(testViewModal.MustafaKemal){ mka in
+                    Button {
+                        content.title = "sa"
+                        content.subtitle = "'\(mka.wordVal)'"
+                        var notfyComp = DateComponents()
+                        notfyComp.day = 1
+                        let trigger = UNCalendarNotificationTrigger(dateMatching: notfyComp, repeats: true)
+                        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+                        UNUserNotificationCenter.current().add(request)
+                    } label: {
+                        rowList(value:mka)
+                    }
                 }
             }
             }
         }
     }
-}
+
 struct Permission: View {
     var body: some View {
         VStack{
